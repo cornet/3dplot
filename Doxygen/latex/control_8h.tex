@@ -1,0 +1,78 @@
+\section{control.h File Reference}
+\label{control_8h}\index{control.h@{control.h}}
+Routines for processing key presses.  
+
+
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void {\bf update\-Spherical\-Coords} (void)
+\item 
+void {\bf update\-Cartesian\-Coords} (void)
+\item 
+void {\bf update\-Camera} (void)
+\item 
+void {\bf process\-Normal\-Keys} (unsigned char key, int x, int y)
+\item 
+void {\bf process\-Special\-Keys} (int key, int x, int y)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for processing key presses. 
+
+Handles all key presses as well as any camera movement related functions. Also defined are the funtions used by Open\-GL as the key handling functions.
+
+Definition in file {\bf control.h}.
+
+\subsection{Function Documentation}
+\index{control.h@{control.h}!processNormalKeys@{processNormalKeys}}
+\index{processNormalKeys@{processNormalKeys}!control.h@{control.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void process\-Normal\-Keys (unsigned char {\em key}, int {\em x}, int {\em y})}\label{control_8h_a3}
+
+
+Function used by glut\-Keyboard\-Func()
+
+Handles all alphanumeric key presses and mouse movement \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em key}]Key pressed \item[{\em x}]Mouse X coordinate \item[{\em y}]Mouse Y coordinate \end{description}
+\end{Desc}
+
+
+Definition at line 73 of file control.c.\index{control.h@{control.h}!processSpecialKeys@{processSpecialKeys}}
+\index{processSpecialKeys@{processSpecialKeys}!control.h@{control.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void process\-Special\-Keys (int {\em key}, int {\em x}, int {\em y})}\label{control_8h_a4}
+
+
+Function used by glut\-Special\-Func()
+
+Handles non-alphanumeric key presses and mouse movement \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em key}]Key pressed \item[{\em x}]Mouse X coordinate \item[{\em y}]Mouse Y coordinate \end{description}
+\end{Desc}
+
+
+Definition at line 98 of file control.c.\index{control.h@{control.h}!updateCamera@{updateCamera}}
+\index{updateCamera@{updateCamera}!control.h@{control.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void update\-Camera (void)}\label{control_8h_a2}
+
+
+Moves the Camera to its new position 
+
+Definition at line 62 of file control.c.\index{control.h@{control.h}!updateCartesianCoords@{updateCartesianCoords}}
+\index{updateCartesianCoords@{updateCartesianCoords}!control.h@{control.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void update\-Cartesian\-Coords (void)}\label{control_8h_a1}
+
+
+Updates Cartesian Corrdinates of the Camera 
+
+Definition at line 52 of file control.c.\index{control.h@{control.h}!updateSphericalCoords@{updateSphericalCoords}}
+\index{updateSphericalCoords@{updateSphericalCoords}!control.h@{control.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void update\-Spherical\-Coords (void)}\label{control_8h_a0}
+
+
+Updates Spherical Coordinates of the Camera 
+
+Definition at line 33 of file control.c.

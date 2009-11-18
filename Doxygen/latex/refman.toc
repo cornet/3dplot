@@ -1,0 +1,119 @@
+\contentsline {chapter}{\numberline {1}3dplot Data Structure Index}{1}
+\contentsline {section}{\numberline {1.1}3dplot Data Structures}{1}
+\contentsline {chapter}{\numberline {2}3dplot File Index}{3}
+\contentsline {section}{\numberline {2.1}3dplot File List}{3}
+\contentsline {chapter}{\numberline {3}3dplot Data Structure Documentation}{5}
+\contentsline {section}{\numberline {3.1}config Struct Reference}{5}
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}
+\contentsline {subsection}{\numberline {3.1.2}Field Documentation}{5}
+\contentsline {subsubsection}{\numberline {3.1.2.1}\setlength {\rightskip }{0pt plus 5cm}float {\bf config::Camera}[3]}{5}
+\contentsline {subsubsection}{\numberline {3.1.2.2}\setlength {\rightskip }{0pt plus 5cm}float {\bf config::Centre}[3]}{6}
+\contentsline {subsubsection}{\numberline {3.1.2.3}\setlength {\rightskip }{0pt plus 5cm}float {\bf config::Up\discretionary {-}{}{}Vector}[3]}{6}
+\contentsline {subsubsection}{\numberline {3.1.2.4}\setlength {\rightskip }{0pt plus 5cm}int {\bf config::Win\discretionary {-}{}{}Height}}{6}
+\contentsline {subsubsection}{\numberline {3.1.2.5}\setlength {\rightskip }{0pt plus 5cm}int {\bf config::Win\discretionary {-}{}{}Width}}{6}
+\contentsline {subsubsection}{\numberline {3.1.2.6}\setlength {\rightskip }{0pt plus 5cm}int {\bf config::Win\discretionary {-}{}{}X}}{6}
+\contentsline {subsubsection}{\numberline {3.1.2.7}\setlength {\rightskip }{0pt plus 5cm}int {\bf config::Win\discretionary {-}{}{}Y}}{6}
+\contentsline {section}{\numberline {3.2}dataset Struct Reference}{7}
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{7}
+\contentsline {subsection}{\numberline {3.2.2}Field Documentation}{7}
+\contentsline {subsubsection}{\numberline {3.2.2.1}\setlength {\rightskip }{0pt plus 5cm}double$\ast $ {\bf dataset::x}}{7}
+\contentsline {subsubsection}{\numberline {3.2.2.2}\setlength {\rightskip }{0pt plus 5cm}long {\bf dataset::X}}{7}
+\contentsline {subsubsection}{\numberline {3.2.2.3}\setlength {\rightskip }{0pt plus 5cm}double$\ast $ {\bf dataset::y}}{7}
+\contentsline {subsubsection}{\numberline {3.2.2.4}\setlength {\rightskip }{0pt plus 5cm}long {\bf dataset::Y}}{7}
+\contentsline {subsubsection}{\numberline {3.2.2.5}\setlength {\rightskip }{0pt plus 5cm}double$\ast $ {\bf dataset::z}}{7}
+\contentsline {section}{\numberline {3.3}frame Struct Reference}{9}
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{9}
+\contentsline {subsection}{\numberline {3.3.2}Field Documentation}{9}
+\contentsline {subsubsection}{\numberline {3.3.2.1}\setlength {\rightskip }{0pt plus 5cm}char($\ast $ {\bf frame::framepath})[BUFSIZE]}{9}
+\contentsline {subsubsection}{\numberline {3.3.2.2}\setlength {\rightskip }{0pt plus 5cm}int {\bf frame::num}}{9}
+\contentsline {section}{\numberline {3.4}light Struct Reference}{10}
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{10}
+\contentsline {subsection}{\numberline {3.4.2}Field Documentation}{10}
+\contentsline {subsubsection}{\numberline {3.4.2.1}\setlength {\rightskip }{0pt plus 5cm}float$\ast $ {\bf light::diffuse}}{10}
+\contentsline {subsubsection}{\numberline {3.4.2.2}\setlength {\rightskip }{0pt plus 5cm}GLenum {\bf light::lightid}}{10}
+\contentsline {subsubsection}{\numberline {3.4.2.3}\setlength {\rightskip }{0pt plus 5cm}float$\ast $ {\bf light::position}}{10}
+\contentsline {subsubsection}{\numberline {3.4.2.4}\setlength {\rightskip }{0pt plus 5cm}float$\ast $ {\bf light::specular}}{10}
+\contentsline {chapter}{\numberline {4}3dplot File Documentation}{11}
+\contentsline {section}{\numberline {4.1}config.h File Reference}{11}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{11}
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{12}
+\contentsline {subsubsection}{\numberline {4.1.2.1}\setlength {\rightskip }{0pt plus 5cm}int read\discretionary {-}{}{}Config\discretionary {-}{}{}File (FILE $\ast $ {\em fh})}{12}
+\contentsline {section}{\numberline {4.2}control.h File Reference}{13}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{13}
+\contentsline {subsection}{\numberline {4.2.2}Function Documentation}{13}
+\contentsline {subsubsection}{\numberline {4.2.2.1}\setlength {\rightskip }{0pt plus 5cm}void process\discretionary {-}{}{}Normal\discretionary {-}{}{}Keys (unsigned char {\em key}, int {\em x}, int {\em y})}{13}
+\contentsline {subsubsection}{\numberline {4.2.2.2}\setlength {\rightskip }{0pt plus 5cm}void process\discretionary {-}{}{}Special\discretionary {-}{}{}Keys (int {\em key}, int {\em x}, int {\em y})}{13}
+\contentsline {subsubsection}{\numberline {4.2.2.3}\setlength {\rightskip }{0pt plus 5cm}void update\discretionary {-}{}{}Camera (void)}{14}
+\contentsline {subsubsection}{\numberline {4.2.2.4}\setlength {\rightskip }{0pt plus 5cm}void update\discretionary {-}{}{}Cartesian\discretionary {-}{}{}Coords (void)}{14}
+\contentsline {subsubsection}{\numberline {4.2.2.5}\setlength {\rightskip }{0pt plus 5cm}void update\discretionary {-}{}{}Spherical\discretionary {-}{}{}Coords (void)}{14}
+\contentsline {section}{\numberline {4.3}convert.h File Reference}{15}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{15}
+\contentsline {subsection}{\numberline {4.3.2}Define Documentation}{15}
+\contentsline {subsubsection}{\numberline {4.3.2.1}\setlength {\rightskip }{0pt plus 5cm}\#define STRIPWIDTH\ 0.1}{15}
+\contentsline {subsection}{\numberline {4.3.3}Function Documentation}{15}
+\contentsline {subsubsection}{\numberline {4.3.3.1}\setlength {\rightskip }{0pt plus 5cm}struct {\bf dataset}$\ast $ convert\discretionary {-}{}{}To\discretionary {-}{}{}Para (char {\em type}[5], struct {\bf dataset} $\ast $ {\em ds})}{15}
+\contentsline {subsubsection}{\numberline {4.3.3.2}\setlength {\rightskip }{0pt plus 5cm}struct {\bf dataset}$\ast $ func\discretionary {-}{}{}To\discretionary {-}{}{}Para (struct {\bf dataset} $\ast $ {\em ds})}{16}
+\contentsline {subsubsection}{\numberline {4.3.3.3}\setlength {\rightskip }{0pt plus 5cm}struct {\bf dataset}$\ast $ kurv\discretionary {-}{}{}To\discretionary {-}{}{}Para (struct {\bf dataset} $\ast $ {\em ds})}{16}
+\contentsline {section}{\numberline {4.4}display.h File Reference}{17}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{17}
+\contentsline {subsection}{\numberline {4.4.2}Enumeration Type Documentation}{17}
+\contentsline {subsubsection}{\numberline {4.4.2.1}\setlength {\rightskip }{0pt plus 5cm}enum {\bf camera\_\discretionary {-}{}{}defaults}}{17}
+\contentsline {subsubsection}{\numberline {4.4.2.2}\setlength {\rightskip }{0pt plus 5cm}enum {\bf window\_\discretionary {-}{}{}defaults}}{18}
+\contentsline {subsection}{\numberline {4.4.3}Function Documentation}{18}
+\contentsline {subsubsection}{\numberline {4.4.3.1}\setlength {\rightskip }{0pt plus 5cm}void draw\discretionary {-}{}{}Axis (void)}{18}
+\contentsline {subsubsection}{\numberline {4.4.3.2}\setlength {\rightskip }{0pt plus 5cm}void draw\discretionary {-}{}{}Graph (struct {\bf dataset} $\ast $ {\em ds})}{18}
+\contentsline {subsubsection}{\numberline {4.4.3.3}\setlength {\rightskip }{0pt plus 5cm}void init\discretionary {-}{}{}Display (void)}{18}
+\contentsline {subsubsection}{\numberline {4.4.3.4}\setlength {\rightskip }{0pt plus 5cm}void render\discretionary {-}{}{}Graph (void)}{18}
+\contentsline {subsubsection}{\numberline {4.4.3.5}\setlength {\rightskip }{0pt plus 5cm}void reshape (int {\em w}, int {\em h})}{19}
+\contentsline {subsubsection}{\numberline {4.4.3.6}\setlength {\rightskip }{0pt plus 5cm}void set\discretionary {-}{}{}Camera\discretionary {-}{}{}Defaults (void)}{19}
+\contentsline {section}{\numberline {4.5}file.h File Reference}{20}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{20}
+\contentsline {subsection}{\numberline {4.5.2}Function Documentation}{20}
+\contentsline {subsubsection}{\numberline {4.5.2.1}\setlength {\rightskip }{0pt plus 5cm}void destroy\discretionary {-}{}{}Data\discretionary {-}{}{}Set (struct {\bf dataset} $\ast $ {\em ds})}{20}
+\contentsline {subsubsection}{\numberline {4.5.2.2}\setlength {\rightskip }{0pt plus 5cm}long getx\discretionary {-}{}{}Num (struct {\bf dataset} $\ast $ {\em ds})}{20}
+\contentsline {subsubsection}{\numberline {4.5.2.3}\setlength {\rightskip }{0pt plus 5cm}long gety\discretionary {-}{}{}Num (struct {\bf dataset} $\ast $ {\em ds})}{20}
+\contentsline {subsubsection}{\numberline {4.5.2.4}\setlength {\rightskip }{0pt plus 5cm}long getz\discretionary {-}{}{}Num (struct {\bf dataset} $\ast $ {\em ds})}{21}
+\contentsline {subsubsection}{\numberline {4.5.2.5}\setlength {\rightskip }{0pt plus 5cm}struct {\bf dataset}$\ast $ read\discretionary {-}{}{}Data\discretionary {-}{}{}File (FILE $\ast $ {\em fh})}{21}
+\contentsline {section}{\numberline {4.6}graph.h File Reference}{22}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{22}
+\contentsline {subsection}{\numberline {4.6.2}Function Documentation}{22}
+\contentsline {subsubsection}{\numberline {4.6.2.1}\setlength {\rightskip }{0pt plus 5cm}float blue\discretionary {-}{}{}Map (float {\em height})}{22}
+\contentsline {subsubsection}{\numberline {4.6.2.2}\setlength {\rightskip }{0pt plus 5cm}void define\discretionary {-}{}{}Material (void)}{22}
+\contentsline {subsubsection}{\numberline {4.6.2.3}\setlength {\rightskip }{0pt plus 5cm}float green\discretionary {-}{}{}Map (float {\em height})}{22}
+\contentsline {subsubsection}{\numberline {4.6.2.4}\setlength {\rightskip }{0pt plus 5cm}void plot\discretionary {-}{}{}Graph (struct {\bf dataset} $\ast $ {\em ds})}{23}
+\contentsline {subsubsection}{\numberline {4.6.2.5}\setlength {\rightskip }{0pt plus 5cm}float red\discretionary {-}{}{}Map (float {\em height})}{23}
+\contentsline {section}{\numberline {4.7}lights.h File Reference}{24}
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{24}
+\contentsline {subsection}{\numberline {4.7.2}Function Documentation}{24}
+\contentsline {subsubsection}{\numberline {4.7.2.1}\setlength {\rightskip }{0pt plus 5cm}int add\discretionary {-}{}{}Light (float {\em x}, float {\em y}, float {\em z})}{24}
+\contentsline {subsubsection}{\numberline {4.7.2.2}\setlength {\rightskip }{0pt plus 5cm}void del\discretionary {-}{}{}Light (int {\em light\discretionary {-}{}{}ID})}{24}
+\contentsline {subsubsection}{\numberline {4.7.2.3}\setlength {\rightskip }{0pt plus 5cm}void destroy\discretionary {-}{}{}Light (int {\em light\discretionary {-}{}{}ID})}{25}
+\contentsline {subsubsection}{\numberline {4.7.2.4}\setlength {\rightskip }{0pt plus 5cm}void move\discretionary {-}{}{}Light (int {\em lightid}, float {\em x}, float {\em y}, float {\em z}, float {\em w})}{25}
+\contentsline {section}{\numberline {4.8}main.h File Reference}{26}
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{26}
+\contentsline {section}{\numberline {4.9}movie.h File Reference}{27}
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{27}
+\contentsline {subsection}{\numberline {4.9.2}Enumeration Type Documentation}{27}
+\contentsline {subsubsection}{\numberline {4.9.2.1}\setlength {\rightskip }{0pt plus 5cm}enum {\bf buffer}}{27}
+\contentsline {subsection}{\numberline {4.9.3}Function Documentation}{27}
+\contentsline {subsubsection}{\numberline {4.9.3.1}\setlength {\rightskip }{0pt plus 5cm}void destroy\discretionary {-}{}{}Frames (struct {\bf frame} $\ast $ {\em frames})}{27}
+\contentsline {subsubsection}{\numberline {4.9.3.2}\setlength {\rightskip }{0pt plus 5cm}void display\discretionary {-}{}{}Movie (void)}{27}
+\contentsline {subsubsection}{\numberline {4.9.3.3}\setlength {\rightskip }{0pt plus 5cm}struct {\bf frame}$\ast $ read\discretionary {-}{}{}Frames (char $\ast $ {\em fn})}{28}
+\contentsline {subsubsection}{\numberline {4.9.3.4}\setlength {\rightskip }{0pt plus 5cm}void render\discretionary {-}{}{}Frames (struct {\bf frame} $\ast $ {\em frames})}{28}
+\contentsline {subsubsection}{\numberline {4.9.3.5}\setlength {\rightskip }{0pt plus 5cm}void save\discretionary {-}{}{}Movie (void)}{28}
+\contentsline {section}{\numberline {4.10}savegraph.h File Reference}{29}
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{29}
+\contentsline {subsection}{\numberline {4.10.2}Function Documentation}{29}
+\contentsline {subsubsection}{\numberline {4.10.2.1}\setlength {\rightskip }{0pt plus 5cm}int save\discretionary {-}{}{}Graph (char $\ast $ {\em fn})}{29}
+\contentsline {subsubsection}{\numberline {4.10.2.2}\setlength {\rightskip }{0pt plus 5cm}int take\discretionary {-}{}{}Screenshot (char $\ast $ {\em fn})}{29}
+\contentsline {subsubsection}{\numberline {4.10.2.3}\setlength {\rightskip }{0pt plus 5cm}int TGAShot (unsigned char $\ast $ {\em image}, int {\em width}, int {\em height}, FILE $\ast $ {\em fh})}{29}
+\contentsline {section}{\numberline {4.11}screenshot.h File Reference}{31}
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{31}
+\contentsline {subsection}{\numberline {4.11.2}Enumeration Type Documentation}{31}
+\contentsline {subsubsection}{\numberline {4.11.2.1}\setlength {\rightskip }{0pt plus 5cm}enum {\bf SCREENSHOT\_\discretionary {-}{}{}FORMAT}}{31}
+\contentsline {subsection}{\numberline {4.11.3}Function Documentation}{31}
+\contentsline {subsubsection}{\numberline {4.11.3.1}\setlength {\rightskip }{0pt plus 5cm}int BMPShot (unsigned char $\ast $ {\em image}, int {\em width}, int {\em height}, FILE $\ast $ {\em fh})}{31}
+\contentsline {subsubsection}{\numberline {4.11.3.2}\setlength {\rightskip }{0pt plus 5cm}int PPMShot (unsigned char $\ast $ {\em image}, int {\em width}, int {\em height}, FILE $\ast $ {\em fh})}{32}
+\contentsline {subsubsection}{\numberline {4.11.3.3}\setlength {\rightskip }{0pt plus 5cm}int RAWShot (unsigned char $\ast $ {\em image}, int {\em width}, int {\em height}, FILE $\ast $ {\em fh})}{32}
+\contentsline {subsubsection}{\numberline {4.11.3.4}\setlength {\rightskip }{0pt plus 5cm}int take\discretionary {-}{}{}Screenshot (char $\ast $ {\em fn}, {\bf SCREENSHOT\_\discretionary {-}{}{}FORMAT} {\em format})}{32}
+\contentsline {subsubsection}{\numberline {4.11.3.5}\setlength {\rightskip }{0pt plus 5cm}int TGAShot (unsigned char $\ast $ {\em image}, int {\em width}, int {\em height}, FILE $\ast $ {\em fh})}{33}

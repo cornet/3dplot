@@ -1,0 +1,17 @@
+Roadmap
+The 3dplot program is far from complete. Many hundreds of features could be thought up and added over time.
+3dplot differs from previous implementations in many ways. Not only is it portable, it is highly maintainable.
+The reference manual provides all the information required to add to the project and it is hoped that people will do so.
+It is hoped that 3dplot will never be complete, it was written to hopefully be the basis for a excellent mathematical tool
+along the lines of Gnuplot. Work on Gnuplot is still continuing many years after it was first created and easily offers far more control
+plotting than commercial plotting that support plotting such as Excel. The philosophy of one tool for one job is often not adopted,
+yes the initial learning process might be more lengthy, but in the long run it is usually the best.
+
+What follows is a list of proposed developments for 3dplot:
+* Full animation support using the FFMPEG or XviD libraries to output to video stream
+* Full control over lights and materials including a database of materials that can be used
+* Portability to Windows tested and confirmed. (Should just require the library locations defining)
+* Config file support finished. All variables should be able to be declared in config file
+* Support more native file output formats. At present only TGA, PPM and BMP are supported. The rest are handled by the ImageMagick libraries
+* Dynamic reading of non-standard data files. You define the format at runtime rather than having to add direct support
+

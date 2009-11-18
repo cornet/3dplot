@@ -1,0 +1,101 @@
+\section{graph.h File Reference}
+\label{graph_8h}\index{graph.h@{graph.h}}
+Routines for plotting the graph itself.  
+
+
+{\tt \#include \char`\"{}main.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void {\bf define\-Material} (void)
+\item 
+float {\bf red\-Map} (float height)
+\item 
+float {\bf green\-Map} (float height)
+\item 
+float {\bf blue\-Map} (float height)
+\item 
+void {\bf plot\-Graph} (struct {\bf dataset} $\ast$ds)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for plotting the graph itself. 
+
+
+
+Definition in file {\bf graph.h}.
+
+\subsection{Function Documentation}
+\index{graph.h@{graph.h}!blueMap@{blueMap}}
+\index{blueMap@{blueMap}!graph.h@{graph.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float blue\-Map (float {\em height})}\label{graph_8h_a3}
+
+
+Computers the Blue value for a height on the graph
+
+This function assumes the height to be between -1 and 1 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em height}]Height of point. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Blue colour value as used by Open\-GL (i.e. between 0.0 and 1.0) \end{Desc}
+
+
+Definition at line 43 of file graph.c.\index{graph.h@{graph.h}!defineMaterial@{defineMaterial}}
+\index{defineMaterial@{defineMaterial}!graph.h@{graph.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void define\-Material (void)}\label{graph_8h_a0}
+
+
+Defines the material used on the graph 
+
+Definition at line 17 of file graph.c.\index{graph.h@{graph.h}!greenMap@{greenMap}}
+\index{greenMap@{greenMap}!graph.h@{graph.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float green\-Map (float {\em height})}\label{graph_8h_a2}
+
+
+Computers the Green value for a height on the graph
+
+This function assumes the height to be between -1 and 1 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em height}]Height of point. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Green colour value as used by Open\-GL (i.e. between 0.0 and 1.0) \end{Desc}
+
+
+Definition at line 36 of file graph.c.\index{graph.h@{graph.h}!plotGraph@{plotGraph}}
+\index{plotGraph@{plotGraph}!graph.h@{graph.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph (struct {\bf dataset} $\ast$ {\em ds})}\label{graph_8h_a4}
+
+
+Plots the graph itself
+
+This parses the dataset and plots the point. It assumes that the dataset is scaled so that all points lie between -1 and 1
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ds}]dataset to plot \end{description}
+\end{Desc}
+
+
+Definition at line 50 of file graph.c.\index{graph.h@{graph.h}!redMap@{redMap}}
+\index{redMap@{redMap}!graph.h@{graph.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float red\-Map (float {\em height})}\label{graph_8h_a1}
+
+
+Computers the Red value for a height on the graph
+
+This function assumes the height to be between -1 and 1 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em height}]Height of point. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Red colour value as used by Open\-GL (i.e. between 0.0 and 1.0) \end{Desc}
+
+
+Definition at line 28 of file graph.c.

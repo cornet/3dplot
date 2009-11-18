@@ -1,0 +1,45 @@
+\section{config.h File Reference}
+\label{config_8h}\index{config.h@{config.h}}
+Routines for reading and writing the config files.  
+
+
+{\tt \#include \char`\"{}lights.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct {\bf config}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int {\bf read\-Config\-File} (FILE $\ast$fh)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for reading and writing the config files. 
+
+Config files are used as the main input to 3dplot. They contain all the variables to recreate the plot, viewport, lights etc In general the extension .3dp should be used. Format of config file is as follows:\begin{itemize}
+\item One line per variable set\item Comments defined using \# and continue to EOL\item Variables are set by $<$variable name$>$ = $<$setting$>$\item Free formating in terms of whitespaces\item Invalid lines are ignored\end{itemize}
+
+
+Definition in file {\bf config.h}.
+
+\subsection{Function Documentation}
+\index{config.h@{config.h}!readConfigFile@{readConfigFile}}
+\index{readConfigFile@{readConfigFile}!config.h@{config.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int read\-Config\-File (FILE $\ast$ {\em fh})}\label{config_8h_a0}
+
+
+Reads configuration file
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fh}]file pointer to config file \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if file read ok, -1 otherwise \end{Desc}
+
+
+Definition at line 15 of file config.c.

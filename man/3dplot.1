@@ -1,0 +1,71 @@
+.TH "3dplot" 1
+.SH NAME
+3dplot - Interactive and Non-Interactive Plotting program
+.SH SYNOPSIS
+.B 3dplot [<options>] [-m] <file>
+.SH DESCRIPTION
+3dplot is a portable graphing program using OpenGL to render the graphs.
+Either a data file is given or a file containing a list of frames to render.
+
+Primarilly a non-interactive program although if called without -o or -O then 3dplot runs in 
+interactive mode allowing real time control over some of the parameters.
+
+Please see the FILE_SPECS file for details on the structure of the datafiles. 
+.TP
+.B \-v
+Enable debug messages.
+.TP
+.B \-V
+Ouput version and quit.
+.TP
+.B \-C <red>,<green>,<blue>
+Specify the colour used to render the graph.
+Values should be between 0 and 255.
+.TP
+.B \-s <width>,<height>
+Set size of window/render, in pixels.
+.TP
+.B \-g <red1>,<blue1>,<green1>,<red2>,<blue2>,<green2>
+Use gradient, height map, fill from colour <red1>,<blue1>,<green1> to colour <red2>,<blue2>,<green2>.
+Values should be between 0 and 255.
+.TP
+.B \-f
+Use flat shading, this might improve rendering speed on slow machines.
+.TP
+.B \-w
+Render wireframe model.
+.TP
+.B \-o <file>
+Ouput to <file>. Extension of file determines filetype.
+Many filetypes supported, see ImageMagick library for full list.
+.TP
+.B \-O <basedir>
+Used with \-m
+Render movie frames in <basedir>.
+Without this 3dplot will render to screen as fast as possible.
+.TP
+.B \-m <framelist>
+Render all datafiles listed in <framelist> as an animation/movie.
+.TP
+.B \-l <x>,<y>,<z>
+Place a light at position <x>,<y>,<z> pointing towards origin.
+.TP
+.B \-a <x1>,<x2>,<y1>,<y2>,<z1>,<z2>
+Define axis lengths. X-axis from <x1> to <x2> etc...
+.TP
+.B \-t <x>,<y>,<z>,<x0>,<y0>,<z0>,<xup>,<yup>,<zup>
+Place camera at <x>,<y>,<z>. Point towards <x0>,<y0>,<z0>.
+<xup>,<yup>,<zup> defines the vector orientation of the camera.
+.SH "CONTROLS"
+Arrow keys move camera around the graph.
+
+.SH "EXAMPLES"
+To render the movie, in the <basedir> after running 3dplot.
+
+$ ffmpeg -i frame%d.png output.mpg
+
+will stream the frames together into a movie.
+.SH "SEE ALSO"
+See the readme files and examples in $<PREFIX>/share/doc/3dplot-0.1
+.SH BUGS
+See BUGS and ROADMAP files in $<PREFIX>/share/doc/3dplot-0.1

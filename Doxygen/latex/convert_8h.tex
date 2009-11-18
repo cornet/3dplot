@@ -1,0 +1,92 @@
+\section{convert.h File Reference}
+\label{convert_8h}\index{convert.h@{convert.h}}
+Routines for converting plot data.  
+
+
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf STRIPWIDTH}\ 0.1
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\bf dataset} $\ast$ {\bf func\-To\-Para} (struct {\bf dataset} $\ast$ds)
+\item 
+{\bf dataset} $\ast$ {\bf kurv\-To\-Para} (struct {\bf dataset} $\ast$ds)
+\item 
+{\bf dataset} $\ast$ {\bf convert\-To\-Para} (char type[5], struct {\bf dataset} $\ast$ds)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for converting plot data. 
+
+3dplot deals with parametric data (PARA). Other formats are supported by 3dplot but are converted to parametric. The following data types are supported:\begin{itemize}
+\item PARA Parametric data, this is the default\item FUNC Function plot data\item KURV Kurv plot data See the FILE\_\-SPEC doc for full details\end{itemize}
+
+
+Definition in file {\bf convert.h}.
+
+\subsection{Define Documentation}
+\index{convert.h@{convert.h}!STRIPWIDTH@{STRIPWIDTH}}
+\index{STRIPWIDTH@{STRIPWIDTH}!convert.h@{convert.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define STRIPWIDTH\ 0.1}\label{convert_8h_a0}
+
+
+Width of line used to plot KURV Plots 
+
+Definition at line 21 of file convert.h.
+
+\subsection{Function Documentation}
+\index{convert.h@{convert.h}!convertToPara@{convertToPara}}
+\index{convertToPara@{convertToPara}!convert.h@{convert.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}struct {\bf dataset}$\ast$ convert\-To\-Para (char {\em type}[5], struct {\bf dataset} $\ast$ {\em ds})}\label{convert_8h_a3}
+
+
+Converting data to parametric
+
+This is the function that should be called. It detects what type the data is and then calls one of specific converting functions.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em type}]Sting containing plot type as defined in the data file 5 chars includs NULL terminator \item[{\em ds}]Pointer to data set to convert \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to converted dataset \end{Desc}
+
+
+Definition at line 84 of file convert.c.\index{convert.h@{convert.h}!funcToPara@{funcToPara}}
+\index{funcToPara@{funcToPara}!convert.h@{convert.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}struct {\bf dataset}$\ast$ func\-To\-Para (struct {\bf dataset} $\ast$ {\em ds})}\label{convert_8h_a1}
+
+
+Converts Function data to Parametric
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ds}]Pointer to data set to convert \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to converted dataset \end{Desc}
+
+
+Definition at line 14 of file convert.c.\index{convert.h@{convert.h}!kurvToPara@{kurvToPara}}
+\index{kurvToPara@{kurvToPara}!convert.h@{convert.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}struct {\bf dataset}$\ast$ kurv\-To\-Para (struct {\bf dataset} $\ast$ {\em ds})}\label{convert_8h_a2}
+
+
+Converts Kurv (Curve) data to Parametric
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ds}]Pointer to data set to convert \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to converted dataset \end{Desc}
+
+
+Definition at line 39 of file convert.c.

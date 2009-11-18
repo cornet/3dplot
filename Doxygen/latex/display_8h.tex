@@ -1,0 +1,171 @@
+\section{display.h File Reference}
+\label{display_8h}\index{display.h@{display.h}}
+Routines for handling Open\-GL Display functions.  
+
+
+{\tt \#include \char`\"{}main.h\char`\"{}}\par
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf window\_\-defaults} \{ {\bf DEF\_\-WIN\_\-WIDTH} =  200, 
+{\bf DEF\_\-WIN\_\-HEIGHT} =  200, 
+{\bf DEF\_\-WIN\_\-X\_\-POS} =  100, 
+{\bf DEF\_\-WIN\_\-Y\_\-POS} =  100
+ \}
+\item 
+enum {\bf camera\_\-defaults} \{ \par
+{\bf CAMX} =  5, 
+{\bf CAMY} =  0, 
+{\bf CAMZ} =  0, 
+{\bf CENTREX} =  0, 
+\par
+{\bf CENTREY} =  0, 
+{\bf CENTREZ} =  0, 
+{\bf UPVECTORX} =  0, 
+{\bf UPVECTORY} =  0, 
+\par
+{\bf UPVECTORZ} =  1
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void {\bf init\-Display} (void)
+\item 
+void {\bf set\-Camera\-Defaults} (void)
+\item 
+void {\bf reshape} (int w, int h)
+\item 
+void {\bf draw\-Axis} (void)
+\item 
+void {\bf render\-Graph} (void)
+\item 
+void {\bf draw\-Graph} (struct {\bf dataset} $\ast$ds)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for handling Open\-GL Display functions. 
+
+
+
+Definition in file {\bf display.h}.
+
+\subsection{Enumeration Type Documentation}
+\index{display.h@{display.h}!camera_defaults@{camera\_\-defaults}}
+\index{camera_defaults@{camera\_\-defaults}!display.h@{display.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf camera\_\-defaults}}\label{display_8h_a20}
+
+
+Define camera defaults
+
+Used by glu\-Look\-At. \begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{CAMX@{CAMX}!display.h@{display.h}}\index{display.h@{display.h}!CAMX@{CAMX}}\item[{\em 
+CAMX\label{display_8h_a20a4}
+}]x position coordinate \index{CAMY@{CAMY}!display.h@{display.h}}\index{display.h@{display.h}!CAMY@{CAMY}}\item[{\em 
+CAMY\label{display_8h_a20a5}
+}]y position coordinate \index{CAMZ@{CAMZ}!display.h@{display.h}}\index{display.h@{display.h}!CAMZ@{CAMZ}}\item[{\em 
+CAMZ\label{display_8h_a20a6}
+}]z position coordinate \index{CENTREX@{CENTREX}!display.h@{display.h}}\index{display.h@{display.h}!CENTREX@{CENTREX}}\item[{\em 
+CENTREX\label{display_8h_a20a7}
+}]x centre point coordinate \index{CENTREY@{CENTREY}!display.h@{display.h}}\index{display.h@{display.h}!CENTREY@{CENTREY}}\item[{\em 
+CENTREY\label{display_8h_a20a8}
+}]y centre point coordinate \index{CENTREZ@{CENTREZ}!display.h@{display.h}}\index{display.h@{display.h}!CENTREZ@{CENTREZ}}\item[{\em 
+CENTREZ\label{display_8h_a20a9}
+}]z centre point coordinate \index{UPVECTORX@{UPVECTORX}!display.h@{display.h}}\index{display.h@{display.h}!UPVECTORX@{UPVECTORX}}\item[{\em 
+UPVECTORX\label{display_8h_a20a10}
+}]x up vector value \index{UPVECTORY@{UPVECTORY}!display.h@{display.h}}\index{display.h@{display.h}!UPVECTORY@{UPVECTORY}}\item[{\em 
+UPVECTORY\label{display_8h_a20a11}
+}]y up vector value \index{UPVECTORZ@{UPVECTORZ}!display.h@{display.h}}\index{display.h@{display.h}!UPVECTORZ@{UPVECTORZ}}\item[{\em 
+UPVECTORZ\label{display_8h_a20a12}
+}]z up vector value \end{description}
+\end{Desc}
+
+
+
+Definition at line 22 of file display.h.\index{display.h@{display.h}!window_defaults@{window\_\-defaults}}
+\index{window_defaults@{window\_\-defaults}!display.h@{display.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf window\_\-defaults}}\label{display_8h_a19}
+
+
+Defines window defaults \begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{DEF_WIN_WIDTH@{DEF\_\-WIN\_\-WIDTH}!display.h@{display.h}}\index{display.h@{display.h}!DEF_WIN_WIDTH@{DEF\_\-WIN\_\-WIDTH}}\item[{\em 
+DEF\_\-WIN\_\-WIDTH\label{display_8h_a19a0}
+}]Window width in pixels \index{DEF_WIN_HEIGHT@{DEF\_\-WIN\_\-HEIGHT}!display.h@{display.h}}\index{display.h@{display.h}!DEF_WIN_HEIGHT@{DEF\_\-WIN\_\-HEIGHT}}\item[{\em 
+DEF\_\-WIN\_\-HEIGHT\label{display_8h_a19a1}
+}]Window height in pixels \index{DEF_WIN_X_POS@{DEF\_\-WIN\_\-X\_\-POS}!display.h@{display.h}}\index{display.h@{display.h}!DEF_WIN_X_POS@{DEF\_\-WIN\_\-X\_\-POS}}\item[{\em 
+DEF\_\-WIN\_\-X\_\-POS\label{display_8h_a19a2}
+}]Window x position from left in pixels \index{DEF_WIN_Y_POS@{DEF\_\-WIN\_\-Y\_\-POS}!display.h@{display.h}}\index{display.h@{display.h}!DEF_WIN_Y_POS@{DEF\_\-WIN\_\-Y\_\-POS}}\item[{\em 
+DEF\_\-WIN\_\-Y\_\-POS\label{display_8h_a19a3}
+}]Window y position from top in pixels \end{description}
+\end{Desc}
+
+
+
+Definition at line 11 of file display.h.
+
+\subsection{Function Documentation}
+\index{display.h@{display.h}!drawAxis@{drawAxis}}
+\index{drawAxis@{drawAxis}!display.h@{display.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void draw\-Axis (void)}\label{display_8h_a16}
+
+
+Draw the graph axes
+
+Each axis from -1 to 1, all data will be scaled. 
+
+Definition at line 100 of file display.c.\index{display.h@{display.h}!drawGraph@{drawGraph}}
+\index{drawGraph@{drawGraph}!display.h@{display.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void draw\-Graph (struct {\bf dataset} $\ast$ {\em ds})}\label{display_8h_a18}
+
+
+Function to do the initial drawing of the graph 
+
+Definition at line 142 of file display.c.\index{display.h@{display.h}!initDisplay@{initDisplay}}
+\index{initDisplay@{initDisplay}!display.h@{display.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void init\-Display (void)}\label{display_8h_a13}
+
+
+Initialise the display
+
+\begin{itemize}
+\item Initalise Window\item Clear Background\item Set up camera \end{itemize}
+
+
+Definition at line 22 of file display.c.\index{display.h@{display.h}!renderGraph@{renderGraph}}
+\index{renderGraph@{renderGraph}!display.h@{display.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void render\-Graph (void)}\label{display_8h_a17}
+
+
+The glut\-Display\-Func() display function.
+
+\begin{itemize}
+\item Call the {\bf draw\-Axis()}{\rm (p.\,\pageref{display_8h_a16})} function\item Plot the graph (held as a GL List) \end{itemize}
+
+
+Definition at line 182 of file display.c.\index{display.h@{display.h}!reshape@{reshape}}
+\index{reshape@{reshape}!display.h@{display.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void reshape (int {\em w}, int {\em h})}\label{display_8h_a15}
+
+
+Function to be called when window is resized
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em w}]New width of window \item[{\em h}]New height of window \end{description}
+\end{Desc}
+
+
+Definition at line 155 of file display.c.\index{display.h@{display.h}!setCameraDefaults@{setCameraDefaults}}
+\index{setCameraDefaults@{setCameraDefaults}!display.h@{display.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void set\-Camera\-Defaults (void)}\label{display_8h_a14}
+
+
+Sets the camera defaults 
+
+Definition at line 62 of file display.c.

@@ -1,0 +1,17 @@
+3dplot install instructions:
+
+Requirements:
+OpenGL 1.2 or greater  - Avaliable from http://www.opengl.org/applications/installing.html
+GLUT 3.7 or greater    - Avaliable from http://www.opengl.org/resources/libraries/glut.html
+ImageMagick            - Avaliable from http://www.imagemagick.org/
+
+1. Edit Makefile and set PREFIX
+2. Run 
+	make
+3. As root run
+	make install
+
+The please consult the man page and README file for usage instructions.
+
+To uninstall 3dplot then, as root, run
+make uninstall

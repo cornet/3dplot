@@ -1,0 +1,108 @@
+\section{file.h File Reference}
+\label{file_8h}\index{file.h@{file.h}}
+Routines for dealing with data files.  
+
+
+{\tt \#include \char`\"{}main.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+long {\bf getx\-Num} (struct {\bf dataset} $\ast$ds)
+\item 
+long {\bf gety\-Num} (struct {\bf dataset} $\ast$ds)
+\item 
+long {\bf getz\-Num} (struct {\bf dataset} $\ast$ds)
+\item 
+void {\bf destroy\-Data\-Set} (struct {\bf dataset} $\ast$ds)
+\item 
+{\bf dataset} $\ast$ {\bf read\-Data\-File} (FILE $\ast$fh)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for dealing with data files. 
+
+
+
+Definition in file {\bf file.h}.
+
+\subsection{Function Documentation}
+\index{file.h@{file.h}!destroyDataSet@{destroyDataSet}}
+\index{destroyDataSet@{destroyDataSet}!file.h@{file.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void destroy\-Data\-Set (struct {\bf dataset} $\ast$ {\em ds})}\label{file_8h_a3}
+
+
+Frees up memory used by unused dataset
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ds}]Dataset to free up \end{description}
+\end{Desc}
+
+
+Definition at line 112 of file file.c.\index{file.h@{file.h}!getxNum@{getxNum}}
+\index{getxNum@{getxNum}!file.h@{file.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long getx\-Num (struct {\bf dataset} $\ast$ {\em ds})}\label{file_8h_a0}
+
+
+Gets the number of X values in the dataset
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ds}]Pointer to dataset \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Number of values. \end{Desc}
+
+
+Definition at line 18 of file file.c.\index{file.h@{file.h}!getyNum@{getyNum}}
+\index{getyNum@{getyNum}!file.h@{file.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long gety\-Num (struct {\bf dataset} $\ast$ {\em ds})}\label{file_8h_a1}
+
+
+Gets the number of Y values in the dataset
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ds}]Pointer to dataset \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Number of values. \end{Desc}
+
+
+Definition at line 23 of file file.c.\index{file.h@{file.h}!getzNum@{getzNum}}
+\index{getzNum@{getzNum}!file.h@{file.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long getz\-Num (struct {\bf dataset} $\ast$ {\em ds})}\label{file_8h_a2}
+
+
+Gets the number of Z values in the dataset
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ds}]Pointer to dataset \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Number of values. \end{Desc}
+
+
+Definition at line 28 of file file.c.\index{file.h@{file.h}!readDataFile@{readDataFile}}
+\index{readDataFile@{readDataFile}!file.h@{file.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}struct {\bf dataset}$\ast$ read\-Data\-File (FILE $\ast$ {\em fh})}\label{file_8h_a4}
+
+
+Reads the data file into a data set
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fh}]Pointer to data file \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Dataset containing data from file. \end{Desc}
+
+
+Definition at line 126 of file file.c.

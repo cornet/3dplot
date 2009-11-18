@@ -1,0 +1,91 @@
+\section{lights.h File Reference}
+\label{lights_8h}\index{lights.h@{lights.h}}
+Routines for dealing with lights.  
+
+
+{\tt \#include $<$GL/glut.h$>$}\par
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct {\bf light}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int {\bf add\-Light} (float x, float y, float z)
+\item 
+void {\bf destroy\-Light} (int light\-ID)
+\item 
+void {\bf del\-Light} (int light\-ID)
+\item 
+void {\bf move\-Light} (int lightid, float x, float y, float z, float w)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for dealing with lights. 
+
+
+
+Definition in file {\bf lights.h}.
+
+\subsection{Function Documentation}
+\index{lights.h@{lights.h}!addLight@{addLight}}
+\index{addLight@{addLight}!lights.h@{lights.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int add\-Light (float {\em x}, float {\em y}, float {\em z})}\label{lights_8h_a0}
+
+
+Adds a light
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em x}]x coordinate of light \item[{\em y}]y coordinate of light \item[{\em z}]z coordinate of light \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]lightid of light FIXME: needs to be implemented \end{Desc}
+
+
+Definition at line 21 of file lights.c.\index{lights.h@{lights.h}!delLight@{delLight}}
+\index{delLight@{delLight}!lights.h@{lights.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void del\-Light (int {\em light\-ID})}\label{lights_8h_a2}
+
+
+Delets a light
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em light\-ID}]Open\-GL light ID \end{description}
+\end{Desc}
+
+
+Definition at line 89 of file lights.c.\index{lights.h@{lights.h}!destroyLight@{destroyLight}}
+\index{destroyLight@{destroyLight}!lights.h@{lights.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void destroy\-Light (int {\em light\-ID})}\label{lights_8h_a1}
+
+
+Frees up memory for unused light
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em light\-ID}]Open\-GL light ID \end{description}
+\end{Desc}
+
+
+Definition at line 84 of file lights.c.\index{lights.h@{lights.h}!moveLight@{moveLight}}
+\index{moveLight@{moveLight}!lights.h@{lights.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void move\-Light (int {\em lightid}, float {\em x}, float {\em y}, float {\em z}, float {\em w})}\label{lights_8h_a3}
+
+
+Moves a light relative to its current position
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em lightid}]ID of light to move TODO: Not supported yet \item[{\em x}]New relative x position \item[{\em y}]New relative y position \item[{\em z}]New relative z position \item[{\em w}]New relative w position - if 0 then light is positional. \end{description}
+\end{Desc}
+
+
+Definition at line 94 of file lights.c.

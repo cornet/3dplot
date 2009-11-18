@@ -1,0 +1,320 @@
+\begin{theindex}
+
+  \item {addLight}
+    \subitem {lights.h}, 24
+
+  \indexspace
+
+  \item {blueMap}
+    \subitem {graph.h}, 22
+  \item {BMPShot}
+    \subitem {screenshot.h}, 31
+  \item {buffer}
+    \subitem {movie.h}, 27
+
+  \indexspace
+
+  \item {Camera}
+    \subitem {config}, 5
+  \item {camera\_\-defaults}
+    \subitem {display.h}, 17
+  \item {CAMX}
+    \subitem {display.h}, 17
+  \item {CAMY}
+    \subitem {display.h}, 17
+  \item {CAMZ}
+    \subitem {display.h}, 17
+  \item {Centre}
+    \subitem {config}, 6
+  \item {CENTREX}
+    \subitem {display.h}, 17
+  \item {CENTREY}
+    \subitem {display.h}, 17
+  \item {CENTREZ}
+    \subitem {display.h}, 17
+  \item {config}, 5
+    \subitem {Camera}, 5
+    \subitem {Centre}, 6
+    \subitem {UpVector}, 6
+    \subitem {WinHeight}, 6
+    \subitem {WinWidth}, 6
+    \subitem {WinX}, 6
+    \subitem {WinY}, 6
+  \item {config.h}, 11
+    \subitem {readConfigFile}, 12
+  \item {control.h}, 13
+    \subitem {processNormalKeys}, 13
+    \subitem {processSpecialKeys}, 13
+    \subitem {updateCamera}, 13
+    \subitem {updateCartesianCoords}, 14
+    \subitem {updateSphericalCoords}, 14
+  \item {convert.h}, 15
+    \subitem {convertToPara}, 15
+    \subitem {funcToPara}, 15
+    \subitem {kurvToPara}, 16
+    \subitem {STRIPWIDTH}, 15
+  \item {convertToPara}
+    \subitem {convert.h}, 15
+
+  \indexspace
+
+  \item {dataset}, 7
+    \subitem {X}, 7
+    \subitem {x}, 7
+    \subitem {Y}, 7
+    \subitem {y}, 7
+    \subitem {z}, 7
+  \item {DEF\_\-WIN\_\-HEIGHT}
+    \subitem {display.h}, 18
+  \item {DEF\_\-WIN\_\-WIDTH}
+    \subitem {display.h}, 18
+  \item {DEF\_\-WIN\_\-X\_\-POS}
+    \subitem {display.h}, 18
+  \item {DEF\_\-WIN\_\-Y\_\-POS}
+    \subitem {display.h}, 18
+  \item {defineMaterial}
+    \subitem {graph.h}, 22
+  \item {delLight}
+    \subitem {lights.h}, 24
+  \item {destroyDataSet}
+    \subitem {file.h}, 20
+  \item {destroyFrames}
+    \subitem {movie.h}, 27
+  \item {destroyLight}
+    \subitem {lights.h}, 24
+  \item {diffuse}
+    \subitem {light}, 10
+  \item {display.h}, 17
+    \subitem {camera\_\-defaults}, 17
+    \subitem {CAMX}, 17
+    \subitem {CAMY}, 17
+    \subitem {CAMZ}, 17
+    \subitem {CENTREX}, 17
+    \subitem {CENTREY}, 17
+    \subitem {CENTREZ}, 17
+    \subitem {DEF\_\-WIN\_\-HEIGHT}, 18
+    \subitem {DEF\_\-WIN\_\-WIDTH}, 18
+    \subitem {DEF\_\-WIN\_\-X\_\-POS}, 18
+    \subitem {DEF\_\-WIN\_\-Y\_\-POS}, 18
+    \subitem {drawAxis}, 18
+    \subitem {drawGraph}, 18
+    \subitem {initDisplay}, 18
+    \subitem {renderGraph}, 18
+    \subitem {reshape}, 18
+    \subitem {setCameraDefaults}, 19
+    \subitem {UPVECTORX}, 17
+    \subitem {UPVECTORY}, 17
+    \subitem {UPVECTORZ}, 17
+    \subitem {window\_\-defaults}, 17
+  \item {displayMovie}
+    \subitem {movie.h}, 27
+  \item {drawAxis}
+    \subitem {display.h}, 18
+  \item {drawGraph}
+    \subitem {display.h}, 18
+
+  \indexspace
+
+  \item {file.h}, 20
+    \subitem {destroyDataSet}, 20
+    \subitem {getxNum}, 20
+    \subitem {getyNum}, 20
+    \subitem {getzNum}, 21
+    \subitem {readDataFile}, 21
+  \item {frame}, 9
+    \subitem {framepath}, 9
+    \subitem {num}, 9
+  \item {framepath}
+    \subitem {frame}, 9
+  \item {funcToPara}
+    \subitem {convert.h}, 15
+
+  \indexspace
+
+  \item {getxNum}
+    \subitem {file.h}, 20
+  \item {getyNum}
+    \subitem {file.h}, 20
+  \item {getzNum}
+    \subitem {file.h}, 21
+  \item {graph.h}, 22
+    \subitem {blueMap}, 22
+    \subitem {defineMaterial}, 22
+    \subitem {greenMap}, 22
+    \subitem {plotGraph}, 23
+    \subitem {redMap}, 23
+  \item {greenMap}
+    \subitem {graph.h}, 22
+
+  \indexspace
+
+  \item {initDisplay}
+    \subitem {display.h}, 18
+
+  \indexspace
+
+  \item {kurvToPara}
+    \subitem {convert.h}, 16
+
+  \indexspace
+
+  \item {light}, 10
+    \subitem {diffuse}, 10
+    \subitem {lightid}, 10
+    \subitem {position}, 10
+    \subitem {specular}, 10
+  \item {lightid}
+    \subitem {light}, 10
+  \item {lights.h}, 24
+    \subitem {addLight}, 24
+    \subitem {delLight}, 24
+    \subitem {destroyLight}, 24
+    \subitem {moveLight}, 25
+
+  \indexspace
+
+  \item {main.h}, 26
+  \item {moveLight}
+    \subitem {lights.h}, 25
+  \item {movie.h}, 27
+    \subitem {buffer}, 27
+    \subitem {destroyFrames}, 27
+    \subitem {displayMovie}, 27
+    \subitem {readFrames}, 27
+    \subitem {renderFrames}, 28
+    \subitem {saveMovie}, 28
+
+  \indexspace
+
+  \item {num}
+    \subitem {frame}, 9
+
+  \indexspace
+
+  \item {plotGraph}
+    \subitem {graph.h}, 23
+  \item {position}
+    \subitem {light}, 10
+  \item {PPMShot}
+    \subitem {screenshot.h}, 32
+  \item {processNormalKeys}
+    \subitem {control.h}, 13
+  \item {processSpecialKeys}
+    \subitem {control.h}, 13
+
+  \indexspace
+
+  \item {RAWShot}
+    \subitem {screenshot.h}, 32
+  \item {readConfigFile}
+    \subitem {config.h}, 12
+  \item {readDataFile}
+    \subitem {file.h}, 21
+  \item {readFrames}
+    \subitem {movie.h}, 27
+  \item {redMap}
+    \subitem {graph.h}, 23
+  \item {renderFrames}
+    \subitem {movie.h}, 28
+  \item {renderGraph}
+    \subitem {display.h}, 18
+  \item {reshape}
+    \subitem {display.h}, 18
+
+  \indexspace
+
+  \item {saveGraph}
+    \subitem {savegraph.h}, 29
+  \item {savegraph.h}, 29
+    \subitem {saveGraph}, 29
+    \subitem {takeScreenshot}, 29
+    \subitem {TGAShot}, 29
+  \item {saveMovie}
+    \subitem {movie.h}, 28
+  \item {screenshot.h}, 31
+    \subitem {BMPShot}, 31
+    \subitem {PPMShot}, 32
+    \subitem {RAWShot}, 32
+    \subitem {SCREENSHOT\_\-BMP}, 31
+    \subitem {SCREENSHOT\_\-FORMAT}, 31
+    \subitem {SCREENSHOT\_\-PPM}, 31
+    \subitem {SCREENSHOT\_\-RAW}, 31
+    \subitem {SCREENSHOT\_\-TGA}, 31
+    \subitem {takeScreenshot}, 32
+    \subitem {TGAShot}, 32
+  \item {SCREENSHOT\_\-BMP}
+    \subitem {screenshot.h}, 31
+  \item {SCREENSHOT\_\-FORMAT}
+    \subitem {screenshot.h}, 31
+  \item {SCREENSHOT\_\-PPM}
+    \subitem {screenshot.h}, 31
+  \item {SCREENSHOT\_\-RAW}
+    \subitem {screenshot.h}, 31
+  \item {SCREENSHOT\_\-TGA}
+    \subitem {screenshot.h}, 31
+  \item {setCameraDefaults}
+    \subitem {display.h}, 19
+  \item {specular}
+    \subitem {light}, 10
+  \item {STRIPWIDTH}
+    \subitem {convert.h}, 15
+
+  \indexspace
+
+  \item {takeScreenshot}
+    \subitem {savegraph.h}, 29
+    \subitem {screenshot.h}, 32
+  \item {TGAShot}
+    \subitem {savegraph.h}, 29
+    \subitem {screenshot.h}, 32
+
+  \indexspace
+
+  \item {updateCamera}
+    \subitem {control.h}, 13
+  \item {updateCartesianCoords}
+    \subitem {control.h}, 14
+  \item {updateSphericalCoords}
+    \subitem {control.h}, 14
+  \item {UpVector}
+    \subitem {config}, 6
+  \item {UPVECTORX}
+    \subitem {display.h}, 17
+  \item {UPVECTORY}
+    \subitem {display.h}, 17
+  \item {UPVECTORZ}
+    \subitem {display.h}, 17
+
+  \indexspace
+
+  \item {window\_\-defaults}
+    \subitem {display.h}, 17
+  \item {WinHeight}
+    \subitem {config}, 6
+  \item {WinWidth}
+    \subitem {config}, 6
+  \item {WinX}
+    \subitem {config}, 6
+  \item {WinY}
+    \subitem {config}, 6
+
+  \indexspace
+
+  \item {X}
+    \subitem {dataset}, 7
+  \item {x}
+    \subitem {dataset}, 7
+
+  \indexspace
+
+  \item {Y}
+    \subitem {dataset}, 7
+  \item {y}
+    \subitem {dataset}, 7
+
+  \indexspace
+
+  \item {z}
+    \subitem {dataset}, 7
+
+\end{theindex}

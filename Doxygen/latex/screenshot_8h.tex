@@ -1,0 +1,134 @@
+\section{screenshot.h File Reference}
+\label{screenshot_8h}\index{screenshot.h@{screenshot.h}}
+Built in funtions for creating screenshots.  
+
+
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf SCREENSHOT\_\-FORMAT} \{ {\bf SCREENSHOT\_\-PPM}, 
+{\bf SCREENSHOT\_\-TGA}, 
+{\bf SCREENSHOT\_\-BMP}, 
+{\bf SCREENSHOT\_\-RAW}
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int {\bf take\-Screenshot} (char $\ast$fn, {\bf SCREENSHOT\_\-FORMAT} format)
+\item 
+int {\bf BMPShot} (unsigned char $\ast$image, int width, int height, FILE $\ast$fh)
+\item 
+int {\bf TGAShot} (unsigned char $\ast$image, int width, int height, FILE $\ast$fh)
+\item 
+int {\bf PPMShot} (unsigned char $\ast$image, int width, int height, FILE $\ast$fh)
+\item 
+int {\bf RAWShot} (unsigned char $\ast$image, int width, int height, FILE $\ast$fh)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Built in funtions for creating screenshots. 
+
+Now mostly redundant due to using Image\-Magic\-K libs
+
+Definition in file {\bf screenshot.h}.
+
+\subsection{Enumeration Type Documentation}
+\index{screenshot.h@{screenshot.h}!SCREENSHOT_FORMAT@{SCREENSHOT\_\-FORMAT}}
+\index{SCREENSHOT_FORMAT@{SCREENSHOT\_\-FORMAT}!screenshot.h@{screenshot.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SCREENSHOT\_\-FORMAT}}\label{screenshot_8h_a9}
+
+
+Defines the built in types of screenshot avaliable \begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{SCREENSHOT_PPM@{SCREENSHOT\_\-PPM}!screenshot.h@{screenshot.h}}\index{screenshot.h@{screenshot.h}!SCREENSHOT_PPM@{SCREENSHOT\_\-PPM}}\item[{\em 
+SCREENSHOT\_\-PPM\label{screenshot_8h_a9a0}
+}]PPM - {\tt http://netghost.narod.ru/gff/vendspec/pbm/ppm.txt} \index{SCREENSHOT_TGA@{SCREENSHOT\_\-TGA}!screenshot.h@{screenshot.h}}\index{screenshot.h@{screenshot.h}!SCREENSHOT_TGA@{SCREENSHOT\_\-TGA}}\item[{\em 
+SCREENSHOT\_\-TGA\label{screenshot_8h_a9a1}
+}]TGA - {\tt http://netghost.narod.ru/gff/vendspec/tga/tga.txt} \index{SCREENSHOT_BMP@{SCREENSHOT\_\-BMP}!screenshot.h@{screenshot.h}}\index{screenshot.h@{screenshot.h}!SCREENSHOT_BMP@{SCREENSHOT\_\-BMP}}\item[{\em 
+SCREENSHOT\_\-BMP\label{screenshot_8h_a9a2}
+}]BMP - {\tt http://netghost.narod.ru/gff/vendspec/micbmp/bmp.txt} \index{SCREENSHOT_RAW@{SCREENSHOT\_\-RAW}!screenshot.h@{screenshot.h}}\index{screenshot.h@{screenshot.h}!SCREENSHOT_RAW@{SCREENSHOT\_\-RAW}}\item[{\em 
+SCREENSHOT\_\-RAW\label{screenshot_8h_a9a3}
+}]RAW gl\-Read\-Pixel dump \end{description}
+\end{Desc}
+
+
+
+Definition at line 12 of file screenshot.h.
+
+\subsection{Function Documentation}
+\index{screenshot.h@{screenshot.h}!BMPShot@{BMPShot}}
+\index{BMPShot@{BMPShot}!screenshot.h@{screenshot.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int BMPShot (unsigned char $\ast$ {\em image}, int {\em width}, int {\em height}, FILE $\ast$ {\em fh})}\label{screenshot_8h_a5}
+
+
+Writes BMP screenshot \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em image}]Image to save - dump of gl\-Read\-Pixels \item[{\em width}]Width of image \item[{\em height}]Height of image \item[{\em fh}]File to save to \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if successful \end{Desc}
+
+
+Definition at line 17 of file screenshot.c.\index{screenshot.h@{screenshot.h}!PPMShot@{PPMShot}}
+\index{PPMShot@{PPMShot}!screenshot.h@{screenshot.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int PPMShot (unsigned char $\ast$ {\em image}, int {\em width}, int {\em height}, FILE $\ast$ {\em fh})}\label{screenshot_8h_a7}
+
+
+Writes PPM screenshot \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em image}]Image to save - dump of gl\-Read\-Pixels \item[{\em width}]Width of image \item[{\em height}]Height of image \item[{\em fh}]File to save to \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if successful \end{Desc}
+
+
+Definition at line 109 of file screenshot.c.\index{screenshot.h@{screenshot.h}!RAWShot@{RAWShot}}
+\index{RAWShot@{RAWShot}!screenshot.h@{screenshot.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int RAWShot (unsigned char $\ast$ {\em image}, int {\em width}, int {\em height}, FILE $\ast$ {\em fh})}\label{screenshot_8h_a8}
+
+
+Writes RAW screenshot \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em image}]Image to save - dump of gl\-Read\-Pixels \item[{\em width}]Width of image \item[{\em height}]Height of image \item[{\em fh}]File to save to \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if successful \end{Desc}
+
+
+Definition at line 126 of file screenshot.c.\index{screenshot.h@{screenshot.h}!takeScreenshot@{takeScreenshot}}
+\index{takeScreenshot@{takeScreenshot}!screenshot.h@{screenshot.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int take\-Screenshot (char $\ast$ {\em fn}, {\bf SCREENSHOT\_\-FORMAT} {\em format})}\label{screenshot_8h_a4}
+
+
+Takes the screenshot using one of the built in functions
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fn}]File name to save to \item[{\em format}]Format to save to \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if successful -1 of not \end{Desc}
+\index{screenshot.h@{screenshot.h}!TGAShot@{TGAShot}}
+\index{TGAShot@{TGAShot}!screenshot.h@{screenshot.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int TGAShot (unsigned char $\ast$ {\em image}, int {\em width}, int {\em height}, FILE $\ast$ {\em fh})}\label{screenshot_8h_a6}
+
+
+Saves cuurent screen to TGA file
+
+Used so then {\bf save\-Graph()}{\rm (p.\,\pageref{savegraph_8h_a2})} can convert to desired format \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em image}]Contents image via of gl\-Read\-Pixels(x, y, width, height, GL\_\-BGR, GL\_\-UNSIGNED\_\-BYTE, image) \item[{\em width}]Width of image \item[{\em height}]Height of image \item[{\em fh}]File to save to \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if succesful \end{Desc}
+
+
+Definition at line 14 of file savegraph.c.

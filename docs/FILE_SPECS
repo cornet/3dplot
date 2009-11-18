@@ -1,0 +1,134 @@
+Here are the file specifcations for the data files for the three different 
+types of plots:
+* 1. Function
+* 2. Parametric
+* 3. Curve
+
+These should be in ASCII format. Also:
+* 4. File List
+Contains the spec for the file list used for movie renders.
+
+
+1. Function
+===========
+---- BEGIN FILE ----
+FUNC
+X,Y
+x1
+x2
+x3
+.
+.
+.
+xX
+y1
+y2
+y3
+.
+.
+.
+yY
+z1
+z2
+z3
+.
+.
+.
+zX*Y
+---- END FILE ----
+
+	X and Y are the number of x and y values respectively.
+	x1, x2, x3, ..., xX are the x values, X of them in total. 
+		Where x1 < x2 < < xX
+	y1, y2, y3, ..., yY are the y values, Y of them in total. 
+		Where y1 y2 < ... < yY
+	z1, z2, z3, ..., zX*Y are the z values, X*Y of them in total. 
+		Where z1 corresponds to the z value at point x1,y1,
+		z2 to the point (x1,y2), , zX+1 to the point (x2,x1) etc...
+	Note that the string "FUNC" is optional, files without this line are assumed to be of this type
+
+
+2. Parametric
+=============
+--- BEGIN FILE ----
+PARA
+S,T
+x1
+x2
+x3
+.
+.
+.
+sS*T
+y1
+y2
+y3
+.
+.
+.
+yS*T
+z1
+z2
+z3
+.
+.
+.
+zS*T
+--- END FILE ---
+
+	S and T are the number of s and t values respectively.
+	x1, x2, x3, ..., xS*T are the x values, S*T of them in total.
+	y1, y2, y3, ..., yS*T are the y values, S*T of them in total.
+	z1, z2, z3, ..., zS*T are the z values, S*T of them in total. 
+		Where z1 corresponds to the z value at point (x1,y1), 
+		z2 to the point (x2,y2) etc...
+
+		
+3. Curve
+========
+--- BEGIN FILE ----
+KURV
+X
+x1
+x2
+x3
+.
+.
+.
+sX
+y1
+y2
+y3
+.
+.
+.
+yX
+z1
+z2
+z3
+.
+.
+.
+zX
+--- END FILE ----
+
+	X is the number of points on the curve.
+	x1, x2, x3, ..., xX are the x values, X of them in total.
+	y1, y2, y3, ..., yX are the y values, X of them in total.
+	z1, z2, z3, ..., zX are the z values, X of them in total.
+		Where z1 corresponds to the z value at point (x1,y1), 
+		z2 to the point (x2,y2) etc
+
+4. File List
+============
+---- BEGIN FILE ----
+<frame1>
+<frmae2>
+.
+.
+.
+<frameN>
+---- END FILE ----
+
+	<frame1> ... <frameN> are the full paths to the N frames.
+

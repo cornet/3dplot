@@ -1,0 +1,56 @@
+This is pdfTeX, Version 3.14159-1.10b (Web2C 7.4.5) (format=pdflatex 2004.1.19)  25 APR 2004 19:51
+**file_c.tex
+(./file_c.tex{/usr/share/texmf/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size11.clo
+File: size11.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./file_c.aux)
+\openout1 = `file_c.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+ [1
+
+{/usr/share/texmf/dvips/config/pdftex.map}] [2] [3] [4] [5] [6] (./file_c.aux) 
+) 
+Here is how much of TeX's memory you used:
+ 205 strings out of 95437
+ 2090 string characters out of 1190233
+ 47491 words of memory out of 1000001
+ 3287 multiletter control sequences out of 10000+50000
+ 4108 words of font info for 16 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 21i,4n,19p,128b,302s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 25 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 0 words of extra memory for PDF output out of 65536
+{/usr/share/texmf/dvips/tetex/f7b6d320.enc}</usr/share/texmf/fonts/type1/blues
+ky/cm/cmr10.pfb>{/usr/share/texmf/dvips/tetex/09fbbfac.enc}</usr/share/texmf/fo
+nts/type1/bluesky/cm/cmtt10.pfb>
+Output written on file_c.pdf (6 pages, 25504 bytes).

@@ -1,0 +1,110 @@
+\section{movie.h File Reference}
+\label{movie_8h}\index{movie.h@{movie.h}}
+Routines for production of movies.  
+
+
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct {\bf frame}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf buffer} \{ {\bf BUFSIZE} =  1025
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void {\bf destroy\-Frames} (struct {\bf frame} $\ast$frames)
+\item 
+{\bf frame} $\ast$ {\bf read\-Frames} (char $\ast$fn)
+\item 
+void {\bf render\-Frames} (struct {\bf frame} $\ast$frames)
+\item 
+void {\bf display\-Movie} (void)
+\item 
+void {\bf save\-Movie} (void)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for production of movies. 
+
+
+
+Definition in file {\bf movie.h}.
+
+\subsection{Enumeration Type Documentation}
+\index{movie.h@{movie.h}!buffer@{buffer}}
+\index{buffer@{buffer}!movie.h@{movie.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf buffer}}\label{movie_8h_a6}
+
+
+Defines buffer size 
+
+Definition at line 10 of file movie.h.
+
+\subsection{Function Documentation}
+\index{movie.h@{movie.h}!destroyFrames@{destroyFrames}}
+\index{destroyFrames@{destroyFrames}!movie.h@{movie.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void destroy\-Frames (struct {\bf frame} $\ast$ {\em frames})}\label{movie_8h_a1}
+
+
+Frees memory from unused frames
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em frames}]Frames to destroy \end{description}
+\end{Desc}
+
+
+Definition at line 21 of file movie.c.\index{movie.h@{movie.h}!displayMovie@{displayMovie}}
+\index{displayMovie@{displayMovie}!movie.h@{movie.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void display\-Movie (void)}\label{movie_8h_a4}
+
+
+Display function used by glut\-Display\-Func 
+
+Definition at line 161 of file movie.c.\index{movie.h@{movie.h}!readFrames@{readFrames}}
+\index{readFrames@{readFrames}!movie.h@{movie.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}struct {\bf frame}$\ast$ read\-Frames (char $\ast$ {\em fn})}\label{movie_8h_a2}
+
+
+Loads frame names into an array
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fh}]File containing data file names \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array containing list of files \end{Desc}
+
+
+Definition at line 39 of file movie.c.\index{movie.h@{movie.h}!renderFrames@{renderFrames}}
+\index{renderFrames@{renderFrames}!movie.h@{movie.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void render\-Frames (struct {\bf frame} $\ast$ {\em frames})}\label{movie_8h_a3}
+
+
+Renders the frams to display lists
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em frames}]Frames to render \item[{\em path}]Path to save frames to \end{description}
+\end{Desc}
+
+
+Definition at line 99 of file movie.c.\index{movie.h@{movie.h}!saveMovie@{saveMovie}}
+\index{saveMovie@{saveMovie}!movie.h@{movie.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void save\-Movie (void)}\label{movie_8h_a5}
+
+
+Function to display and save the movie to a file
+
+again used by glut\-Display\-Func 
+
+Definition at line 179 of file movie.c.

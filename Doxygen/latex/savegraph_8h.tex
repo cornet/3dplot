@@ -1,0 +1,73 @@
+\section{savegraph.h File Reference}
+\label{savegraph_8h}\index{savegraph.h@{savegraph.h}}
+Routines for saving the output to image files.  
+
+
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int {\bf TGAShot} (unsigned char $\ast$image, int width, int height, FILE $\ast$fh)
+\item 
+int {\bf take\-Screenshot} (char $\ast$fn)
+\item 
+int {\bf save\-Graph} (char $\ast$fn)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Routines for saving the output to image files. 
+
+These routines will save the image to any desired format using the Image\-Magick routines.
+
+Definition in file {\bf savegraph.h}.
+
+\subsection{Function Documentation}
+\index{savegraph.h@{savegraph.h}!saveGraph@{saveGraph}}
+\index{saveGraph@{saveGraph}!savegraph.h@{savegraph.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int save\-Graph (char $\ast$ {\em fn})}\label{savegraph_8h_a2}
+
+
+Saves current screen to a file
+
+The output format is detected from the filename extension \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fn}]Filename to save to \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if sucessful -1 if not \end{Desc}
+
+
+Definition at line 96 of file savegraph.c.\index{savegraph.h@{savegraph.h}!takeScreenshot@{takeScreenshot}}
+\index{takeScreenshot@{takeScreenshot}!savegraph.h@{savegraph.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int take\-Screenshot (char $\ast$ {\em fn})}\label{savegraph_8h_a1}
+
+
+Takes a screenshot and calls {\bf TGAShot()}{\rm (p.\,\pageref{screenshot_8h_a6})}
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fn}]File name to wrte to. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if successful -1 if not. \end{Desc}
+
+
+Definition at line 57 of file savegraph.c.\index{savegraph.h@{savegraph.h}!TGAShot@{TGAShot}}
+\index{TGAShot@{TGAShot}!savegraph.h@{savegraph.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int TGAShot (unsigned char $\ast$ {\em image}, int {\em width}, int {\em height}, FILE $\ast$ {\em fh})}\label{savegraph_8h_a0}
+
+
+Saves cuurent screen to TGA file
+
+Used so then {\bf save\-Graph()}{\rm (p.\,\pageref{savegraph_8h_a2})} can convert to desired format \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em image}]Contents image via of gl\-Read\-Pixels(x, y, width, height, GL\_\-BGR, GL\_\-UNSIGNED\_\-BYTE, image) \item[{\em width}]Width of image \item[{\em height}]Height of image \item[{\em fh}]File to save to \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 if succesful \end{Desc}
+
+
+Definition at line 14 of file savegraph.c.

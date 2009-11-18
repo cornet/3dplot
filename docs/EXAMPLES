@@ -1,0 +1,7 @@
+EXAMPLES
+========
+
+Found in <$PREFIX>/share/3dplot-0.1/
+- data.dat           : Sample parametric datafile.
+- data/*.dat         : Movie datafiles.
+- data/framelist.lst : Framelist file for above datafiles.
